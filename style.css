@@ -1,0 +1,368 @@
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'popons',sans-serif;
+}
+
+:root{
+    --text-gray: #ffffff;
+    --text-light: #030303da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #18c202;
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+
+    --sky:linear-gradient(120deg, #73d313 0%, #abf903 100%);
+}
+
+/*Global Classes*/
+a{
+  text-decoration: none;
+  color: #3f4954;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family:'Trebuchet MS';
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+}
+
+h3{
+    font-family:Georgia,;
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family:sans-serif;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family:'Segoe UI', Tahoma;
+    color: var(--text-light);
+}
+
+ol{
+    font-family:'Segoe UI', Tahoma;
+    color: var(--text-light);
+}
+
+/*----NavBar----*/
+
+.nav{
+    background:var(--sky);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 9vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+ 
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+      background-color: var(--midnight);  
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family:'Lucida Sans';
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+}
+
+.nav .social i{
+    padding: 0.2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+
+}
+/* ----------------- Main Content----------- */
+main .site-content{
+    background: var(--sky);
+   }
+
+   main .para1{
+    padding: 0;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 4vw;
+   }
+
+   main .h2{
+    text-align: center;
+    font-size: 9vw;
+   }
+    
+  
+
+
+/* --------------- Site title ---------------- */
+main .site-title{
+    background: url('images/2.webp');
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+
+}
+main .site-title .site-background{
+    padding-top: 20rem;
+    text-align: center;
+    color: var(--text-gray);
+}
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title.btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+ .site-content  {
+    padding: 0 1em;
+    text-align: center;
+    height: auto;
+
+}
+
+
+
+
+
+/*---------------------------section1----------------------------------------------------*/
+main .site-content h2{
+    font-size: 30px;
+    padding: 50px;
+    background-color:var(--sky);
+}
+
+
+
+.site-content .para1{
+    height: 10%;
+    background-color: rgb(253, 253, 253);
+}
+
+
+.section-container 
+{
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0%;
+}
+
+.section-container .columns
+
+{
+flex:0 0 auto;
+width:50%;
+}
+
+.section-container .columns.image
+{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.section-container .columns.content .content-container 
+{
+padding:40px 50px;
+}
+
+.section-container .columns.content .content-container h5
+{
+font-weight:700;
+font-size:25px;
+margin-bottom:20px;
+}
+
+.section-container .columns.content .content-container p
+{
+font-weight:400;
+font-size:16px;
+margin-bottom:20px;
+margin-bottom:15px;
+text-align:justify;
+}
+
+/* ----------------- Footer --------------------- */
+
+footer{
+    font-family: "segoe UI";
+    font-weight: 400;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+    }
+    footer h2{
+        padding: 20px;
+        color: aliceblue;
+    }
+    footer.footer .social a{
+        color: aliceblue;
+        padding: 10px; 
+        font-size: 15px; 
+        text-decoration: none; 
+    }
+    footer.footer .social a:hover{
+        color: rgb(133, 158, 180);
+    }
+    footer.footer .social a i{   
+        padding: 20px;
+        font-size: 15px;
+    }
+    footer.footer .quiklinks ul{
+        padding: 30px;
+    }
+    footer.footer .quiklinks ul a{
+    list-style: none;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    padding:20px;
+    display:inline-flex;
+    }
+    footer.footer .quiklinks ul a:hover{
+        opacity: 0.8;
+        color: rgb(136, 162, 184);
+    }
+    footer.footer .quiklinks ul a li{
+        display: inline;
+        text-align: center;
+    }
+    footer.footer .coppyright{
+        color: rgb(251, 251, 251);
+        padding: 20px;
+    }
+    @media screen and (max-width: 600px){
+        .footer.footer {
+            font-family: "segoe UI";
+            font-weight: 200;
+            background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            color: aliceblue; 
+        }
+        footer.footer .quiklinks ul{
+            padding: 20px;
+        }
+        footer.footer .quiklinks ul a{
+        list-style: none;
+        color: aliceblue;
+        text-align: center;
+        text-decoration: none;
+        padding:10px;
+        display:grid;
+        }
+    }
+
+
+/* ---------x------- Footer ----------x---------- */
